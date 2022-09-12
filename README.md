@@ -4,7 +4,7 @@ Hola, soy Marc, un Desarrollador Web 🚀 de Barcelona, experiencia en diseño y
 
 Donde me puedes encontrar
 Personal
-⭐😊 Linkedin: https://www.linkedin.com/in/marc-l%C3%A1zaro-mart%C3%AD-32591a204/ ✌️
+⭐😊 Linkedln: https://www.linkedin.com/in/marc-l%C3%A1zaro-mart%C3%AD-32591a204/ ✌️
 ⭐😊 Email: marclazaromarti@gmail.com ✌️
 ⭐😊 Instagram: lazaro_marc ✌️
 ⭐😊 Twitter: @lazaro_marc2002 ✌️
