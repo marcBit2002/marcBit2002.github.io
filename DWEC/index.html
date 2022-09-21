@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc Lázaro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css\mobile.css">
+  <title>Marc Lázaro</title>
 </head>
 <body>
-    <h1>QUADERN DE JAVASCRIPT</h1>
-    <p>Programa Salutació</p>
-    <script async src="//jsfiddle.net/marc_bit/57Lyubwm/130/embed/"></script>
-    <p>Programa Estructures simples</p>
-    <script async src="//jsfiddle.net/marc_bit/avgsdy06/26/embed/"></script>
-    <p>Programa Estructures complexes</p>
-    <script async src="//jsfiddle.net/marc_bit/wt12fvyb/124/embed/"></script>
-   
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">Marc Lázaro Martí</a></h1>
+        <ul id="main-nav" class="txt-btn">
+          <li><a class="current" href="index.html">Quadern</a></li>
+          <li><a href="contact.html">Contacte</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="showcase-home">
+      <div class="showcase-banner">
+        <h1 class="subpage">Quadern JavaScript</h1>
+        
+        <p class="large"><a href="https://politecnics.barcelona/es/">Centre d'Estudis Politècnics</a></p>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-nav">
+        <ul class="txt-btn">
+          <li><a href="#">JavaScript Bàsic</a></li>
+          <li><a href="#">Objectes</a></li>
+          <li><a href="#">Arrays</a></li>
+          <li><a href="#">Projectes</a></li>
+         
+        </ul>
+      </div>
+      <div class="portfolio-content">
+        <div class="box">
+          <a href="structSimples.html">
+            <img src="img\estructuresSimples.jpeg" alt="">
+          </a>
+        </div>
+        <div class="box">
+          <a href="structComplexes.html">
+            <img src="img\objetos.png" alt="">
+          </a>
+        </div>
+        <div class="box">
+          <a href="salutacio.html">
+            <img src="img\holamundo.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <footer id="main-footer">
+    <div class="container">
+      <p class="small">Marc Lázaro 2022 &copy;</p>
+      <!-- <div class="social"> -->
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      <!-- </div> -->
+    </div>
+  </footer>
 
 </body>
 </html>
