@@ -216,7 +216,10 @@
     padding-bottom: 20px;
   
   }
-  
+  .box img {
+    width: 332px;
+    height: 200px;
+  }
   .box-portfolio {
     float: left;
     width: 50%;
