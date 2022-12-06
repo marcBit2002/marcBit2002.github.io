@@ -3,20 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css\mobile.css">
-    <title>Callback</title>
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/toDoList.css">
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             <div class="container">
-                <h1 class="logo"><a href="index.html">Callbacks
+                <h1 class="logo"><a href="index.html">ToDo List
                     </a></h1>
                 <ul id="main-nav" class="txt-btn">
                     <li><a class="current" href="index.html">Quadern</a></li>
@@ -30,8 +32,9 @@
         <div class="container">
             <div class="box-portfolio">
                 <h4>Descripció del projecte</h4>
-                <p>Les funcions callback no són més que un tipus de funcions que es passen per paràmetre a altres funcions. A més, els paràmetres d'aquestes funcions prenen un valor especial en el context de l'interior de la funció.
+                <p>Entenem ToDo List com una llista de tasques pendents, comunament coneguda com tot list o task list, és una llista de coses per fer. Conté, bàsicament, qualsevol activitat que has de realitzar, però tenir la llista per escrit no significa necessàriament que sigui útil.
                 </p>
+                <p>En aquest cas treballarem amb la metodologia DRAG and DROP a Javascript, també utilitzarem DATASETS i una mica de setTimeout()</p>
             </div>
 
         </div>
@@ -39,24 +42,51 @@
             <div class="container">
                 <div class="hr-small"></div>
                 <div class="prev">
-                    <a href="cookies.html" class="btn btn-light">Prev</a>
+                    <a href="dom.html" class="btn btn-light">Prev</a>
                 </div>
                 <div class="next">
-                    <a href="dom.html" class="btn btn-light">Next</a>
+                    <a href="setTime.html" class="btn btn-light">Next</a>
                 </div>
                 <div class="hr-small-2"></div>
             </div>
         </div>
     </section>
-
     <div class="container">
-        <h2>FUNCIONS CALLBACK</h2>
-        <p>Funcions callback passant paràmetres i amb nom</p>
-        <script async src="//jsfiddle.net/marc_bit/dqkpxmu8/37/embed/"></script>
-        <p>Funcions callback sense passar paràmetres i anònimes</p>
-        <script async src="//jsfiddle.net/marc_bit/q2egmyc6/3/embed/"></script>
+        <div class="modal" id="todo_form">
+            <div class="header">
+                <div class="title">Add Todo</div>
+                <button class="btn close-modal">&times;</button>
+            </div>
+            <div class="body">
+                <input type="text" id="todo_input" />
+                <input type="submit" value="Add Todo" id="todo_submit" />
+            </div>
+        </div>
+        <div class="todo-container">
+            <div class="status" id="no_status">
+                <h1>Llista de tasques</h1>
+                <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+                <div class="todo" draggable="true">
+                    JavaScript
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+            <div class="status">
+                <h1>Sense començar</h1>
+            </div>
+            <div class="status">
+                <h1>En progrés</h1>
+            </div>
+            <div class="status">
+                <h1>Finalitzat</h1>
+            </div>
+        </div>
+
+        <!-- Overlay (superposició) -->
+        <div id="overlay"></div>
+        <script src="js/toDoList.js"></script>
+        <script async src="//jsfiddle.net/marc_bit/bauy29k4/9/embed/"></script>
     </div>
-  
     <footer id="main-footer">
         <div class="container">
             <p class="small">Marc Lázaro 2022 &copy;</p>
@@ -70,7 +100,6 @@
             <!-- </div> -->
         </div>
     </footer>
-
 </body>
 
 </html>
