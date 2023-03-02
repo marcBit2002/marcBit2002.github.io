@@ -9,14 +9,14 @@
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css\mobile.css">
-    <title>SETTIMEOUT() AND SETINTERVAL()</title>
+    <title>QuerySelector</title>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             <div class="container">
-                <h1 class="logo"><a href="index.html">SETTIMEOUT() AND SETINTERVAL()
+                <h1 class="logo"><a href="index.html">QuerySelector
                     </a></h1>
                 <ul id="main-nav" class="txt-btn">
                     <li><a class="current" href="index.html">Quadern</a></li>
@@ -30,11 +30,13 @@
         <div class="container">
             <div class="box-portfolio">
                 <h4>Descripció del projecte</h4>
-                <p>setTimeout(function, milliseconds)
-                    Executa una funció, després d'esperar un nombre especificat de mil·lisegons.
-                </p>
-                <p>setInterval(function, milliseconds)
-                    Igual que setTimeout(), però repeteix l'execució de la funció contínuament.</p>
+                <p>QuerySelector()</p>
+                <p>En aquest cas aquesta funció actua de forma molt similar a un getElementById(), ja que podem
+                    seleccionar tenir diversos elements amb una ANEU però només selecciona el primer.</p>
+                <p>QuerySelectorAll()</p>
+                <p>Aquesta funció és similar a un getElementsByTagName, retorna un conjunt d'elements.strong> Té
+                    l'avantatge, el querySelectorAll() que ens permet aconseguir tots els elements d'una o diverses
+                    consultes, simplement separant amb comes, com fem en CSS.</p>
             </div>
 
         </div>
@@ -42,10 +44,10 @@
             <div class="container">
                 <div class="hr-small"></div>
                 <div class="prev">
-                    <a href="toDoList.html" class="btn btn-light">Prev</a>
+                    <a href="datasets.html" class="btn btn-light">Prev</a>
                 </div>
                 <div class="next">
-                    <a href="datasets.html" class="btn btn-light">Next</a>
+                    <a href="queryDatasets.html" class="btn btn-light">Next</a>
                 </div>
                 <div class="hr-small-2"></div>
             </div>
@@ -53,10 +55,17 @@
     </section>
 
     <div class="container">
-        <p>setTimeout: exemple que mostra un alert i al dos segons apareix un altre</p>
-        <script async src="//jsfiddle.net/marc_bit/zonp958m/6/embed/"></script>
-        <p>setInterval: exemple que mostra un missatge cada segon fins que li indiquem</p>
-        <script async src="//jsfiddle.net/marc_bit/upm6L1tk/37/embed/"></script>
+        <h3>QuerySelector() i QuerySelectorAll()</h3>
+        <p>Afegeixis una mica de JS per fer alguna cosa amb els elements recuperats (no tots, però almenys un exemple
+            amb el resultat de QuerySelector() i un altre amb QuerySelectorAll())</p>
+        <script async src="//jsfiddle.net/marc_bit/tc5aygzj/91/embed/"></script>
+
+        <p>Fes demostració de selecció i canvi d'estil d'alguns elements fent servir com a selecció: class, id, atribut,
+            elements dins d'un element html, elements que comencin per “????”. Modificació del contingut d'elements.
+            Creació de nous elements. Afegir un event “onClick” al nou element. Eliminació d'alguns elements en fer
+            click en una altre diferent.</p>
+        <script async src="//jsfiddle.net/marc_bit/5soajezq/159/embed/"></script>
+
     </div>
 
     <footer id="main-footer">
