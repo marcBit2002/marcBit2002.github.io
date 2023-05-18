@@ -19,7 +19,12 @@ portfolioImgs.forEach(img => {
 
     // Actualizar el contenido del modal
     videoElement.src = video;
-    videoElement.poster = e.currentTarget.src; // Usar la imagen de la miniatura como póster del video
+
+    // Verificar si la miniatura está disponible y asignarla al atributo poster
+    if (e.currentTarget.src) {
+      videoElement.poster = e.currentTarget.src;
+    }
+
     p.textContent = descripcion;
     a.href = github;
     h5.textContent = title;
