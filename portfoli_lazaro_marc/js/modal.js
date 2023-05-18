@@ -5,10 +5,10 @@ const portfolioImgs = document.querySelectorAll('.portfolio-img');
 portfolioImgs.forEach(img => {
   img.addEventListener('click', e => {
     // Obtener la información de los atributos de datos
-    const video = e.currentTarget.dataset.video;
-    const github = e.currentTarget.dataset.github;
-    const descripcion = e.currentTarget.dataset.descripcion;
-    const title = e.currentTarget.dataset.title;
+	const video = e.currentTarget.getAttribute('data-video');
+	const github = e.currentTarget.getAttribute('data-github');
+	const descripcion = e.currentTarget.getAttribute('data-descripcion');
+	const title = e.currentTarget.getAttribute('data-title');
 
     // Obtener los elementos del modal
     const modal = document.querySelector('#miModal');
