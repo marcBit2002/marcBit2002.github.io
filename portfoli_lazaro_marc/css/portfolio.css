@@ -21,11 +21,17 @@
 }
 
 .portfolio .portfolio-item-inner {
-  border: 6px solid var(--skin-color);
+  border: 1px solid var(--skin-color);
   border-radius: 35px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.portfolio .portfolio-item-inner:hover {
+  transform: scale(1.1);
+}
+
 
 .portfolio .portfolio-item-inner .portfolio-img {
   width: 100%;  

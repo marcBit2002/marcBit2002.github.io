@@ -12,20 +12,22 @@ portfolioImgs.forEach(img => {
 
     // Obtener los elementos del modal
     const modal = document.querySelector('#miModal');
-    const iframe = modal.querySelector('iframe');
+    const videoElement = modal.querySelector('video');
     const p = modal.querySelector('p');
     const a = modal.querySelector('a');
     const h5 = modal.querySelector('h5')
 
     // Actualizar el contenido del modal
-    iframe.src = video;
+    videoElement.src = video;
+    videoElement.poster = e.currentTarget.src; // Usar la imagen de la miniatura como póster del video
     p.textContent = descripcion;
     a.href = github;
     h5.textContent = title;
 
     // Agregar evento para detener el video cuando se oculte el modal
     modal.addEventListener('hidden.bs.modal', function() {
-      iframe.src = ''; // Limpia la URL del iframe para detener la reproducción
+      videoElement.pause(); // Pausar el video al ocultar el modal
+      videoElement.src = ''; // Limpiar la URL del video para detener la reproducción
     });
   });
 });

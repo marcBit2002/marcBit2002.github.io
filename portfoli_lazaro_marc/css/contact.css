@@ -28,6 +28,10 @@
 .contact .contact-info-item .icon .fa {
   font-size: 25px;
   color: var(--skin-color);
+  transition: transform 0.3s ease;
+}
+.contact .contact-info-item .icon:hover {
+  transform: scale(1.5);
 }
 
 .contact .contact-info-item h4 {

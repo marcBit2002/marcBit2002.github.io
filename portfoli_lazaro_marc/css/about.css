@@ -114,7 +114,6 @@
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-
 }
 
 .about .about-content h3.title {
@@ -127,13 +126,12 @@
 .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
-
 }
 
 .about .about-content .timeline {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
-    border: 1px solid var(--bg-black-50);
+    border: 1px solid var(--skin-color);
     border-radius: 35px;
     width: 100%;
     position: relative;
